@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles.scss">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.scss">
+    
     <script src="https://kit.fontawesome.com/0d4d477689.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>OXYGENShop</title>
 </head>
 <body>
+    
     <!--HEADER-->
     <header>
         <div class="container-header">
@@ -25,18 +28,24 @@
                     <i id="icono-nav" class="fa-solid fa-bars"></i>
                 </label>
                 <ul>
-                    <li><a href="#">WHY US</a></li>
-                    <li><a href="#">BENEFITS</a></li>
-                    <li><a href="#">PRICES</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#opening-section">WHY US</a></li>
+                    <li><a href="#contenedor-rectangulo">BENEFITS</a></li>
+                    <li><a href="#h1-pricing">PRICES</a></li>
+                    <li><a href="#grip-formulario">CONTACT</a></li>
                 </ul>
+                
             </div>
+            
+        </div>
+        <div class="progreso">
+            <div id="barra-progreso-horizontal"></div>
         </div>
     </header>
-
+    
     <main>
+        
         <!--opening-section-->
-        <div class="opening-section">
+        <div id="opening-section" class="opening-section">
             <h3>Sell More!</h3>
             <p>Open shop on our platform and increase your sales</p>
             <div id="boton">
@@ -76,7 +85,7 @@
         </div>
 
         <!--RECTÁNGULO 3-->
-        <div class="contenedor-rectangulo">
+        <div id="contenedor-rectangulo" class="contenedor-rectangulo">
             <div class="contenedor-box">
                 <div class="grid-rectangulo1">
                     <i id="icono-1" class="fa-solid fa-circle"></i>
@@ -98,29 +107,36 @@
                 </div>
             </div>
             <div class="contenedor-box3-4">
-            <div class="contenedor-box3">
-                <div class="grid-rectangulo5">
-                    <p id="tx1">Increase recognition your brand!</p>
-                    <p id="tx2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae quam molestiae vero officiis quisquam libero! Eligendi facilis modi dicta.</p>
+                <div class="contenedor-box3">
+                    <div class="grid-rectangulo5">
+                        <p id="tx1">Increase recognition your brand!</p>
+                        <p id="tx2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae quam molestiae vero officiis quisquam libero! Eligendi facilis modi dicta.</p>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div class="contenedor-box4">
-                <div class="grid-rectangulo6">
-                    <img id="trompeta" src="imagenes/Trumpet 1.png" alt="">
+                <div class="contenedor-box4">
+                    <div class="grid-rectangulo6">
+                        <img id="trompeta" src="imagenes/Trumpet 1.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-
         <!-----------PRICING------------->
         <h1  id="h1-pricing">Pricing</h1>
-        <div class="pricing-box">
+        <div class="selector">
+            <span>Select the currency</span>
+            <select name="cambioMoneda" id="cambioMoneda">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+        <div id="pricing" class="pricing-box">
             <div class="contenedor-pricing">
                 <div class="column-pricing1">
                     <div class="box1">
                         <p id="titulo">Basic</p>
-                        <p id="precio">$0</p>
+                        <p id="precio">$</p>
                     </div>
                     <div class="box2">
                         <li id="capacidad"><i id="checkon" class="fa-regular fa-square-check"></i>100 MB HDD</li>
@@ -137,7 +153,7 @@
                 <div class="column-pricing2">
                     <div class="box3">
                         <p id="titulo">Professional</p>
-                        <p id="precio">$25</p>
+                        <p id="precio">$</p>
                         <p id="oferta">Limited offer</p>
                     </div>
                     <div class="box4">
@@ -157,7 +173,7 @@
                         <div class="column-pricing3">
                             <div class="box5">
                                 <p id="titulo">Premium</p>
-                                <p id="precio">$60</p>
+                                <p id="precio">$</p>
                                 <p id="oferta">Limited offer</p>
                             </div>
                             <div class="box6">
@@ -172,36 +188,56 @@
                     </div>
                 </div>
         </div>
+<!--------------- SLIDER ----------------->
+<div class="slider">
+    <div class="dots">
+        <span ></span><span ></span><span ></span>
+    </div>
+
+    <div class="slides">
+        <img name="Imagen" >
+    </div>
+    
+    <div class="prev-btn">
+        <button>&#8249;</button>
+    </div>
+    <div class="next-btn">
+        <button>&#8250;</button>
+    </div>
+    
+</div>
+
+
+
+
 <!--------------- FORMULARIO CONTACTO ----------------->
-        <div class="grip-formulario">
-            <div class="formulario">
-                <p id="titulo1">Any Questions?</p>
-                <p id="titulo2">Leave your email address or call us!</p>
-                <div class="contacto">
-                    <p id="contacto"><i class="fa-regular fa-envelope"></i> info@bestshop.xyz</p>
-                    <p id="contacto"><i class="fa-solid fa-phone"></i> 123 456 789</p>
-                </div>
+    <div id="grip-formulario" class="grip-formulario">
+    <div class="formulario">
+            <p id="titulo1">Any Questions?</p>
+            <p id="titulo2">Leave your email address or call us!</p>
+        <div class="contacto">
+            <p id="contacto"><i class="fa-regular fa-envelope"></i> info@bestshop.xyz</p>
+            <p id="contacto"><i class="fa-solid fa-phone"></i> 123 456 789</p>
             </div>
-
-            <div class="formulario2">
-                <p>NAME</p>
-                <input type="text">
-                <p>EMAIL</p>
-                <input type="email">
-
-                <!-----------------LEGAL---------------------->
-        <div class="legal">
-            <input id="checkbox" type="checkbox" checked>
-
-            <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+        </div>
+    
+        <form id="formulario2" class="formulario2">
+            <p>NAME</p>
+            <input id="nameInput" type="text" minlength="2" maxlength="100" required >
+            <p>EMAIL</p>
+            <input id="emailInput" type="email" required>
+        
+            <!-----------------LEGAL---------------------->
+            <div class="legal">
+                <input id="checkbox" type="checkbox" required>
+                <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+            </div>
             
-        </div>
-        <div class="send">
-            <button id="send"><p id="tx-btn">Send</p></button>
-        </div>
+            <div class="send">
+                <button  id="send" type="submit" value="clicked"><p id="tx-btn">Send</p></button>
             </div>
         </div>
-
+        </form>
         
         <!-----------------FOOTER---------------------->
         <div class="footer">
@@ -210,12 +246,47 @@
                 <p id="copiright">© 2022 OXYGEN, All Rights Reserved</p>
             </div>
             <div class="column2">
-                <i id="twitter" class="fa-brands fa-twitter"></i>
-                <i id="facebook" class="fa-brands fa-facebook"></i>
+                <a href="https://twitter.com/?lang=es"><i id="twitter" class="fa-brands fa-twitter"></a></i>
+                <a href="https://es-es.facebook.com/"><i id="facebook" class="fa-brands fa-facebook"> </a></i>
             </div>
 
         </div>
-    </main>
+        
+        <!-- ---------------NEWSLETTER------------------------>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div>
+                    <span id="closeModal" class="close">&times;</span>
+                </div>
+                <div id="subscribe">
+                    <h2>Subscribe To Our Newsletter</h2>
+                </div>
+                <div id="p-newsletter">
+                    <p>
+                        Don't miss out on our latest news and updates! Subscribe to our newsletter and receive exclusive content, special offers, and helpful tips directly in your inbox. Sign up now and stay up-to-date with everything we have to offer!
+                    </p>
+                </div>
+                <form id="newsletterForm">
+                    <div id="form-newsletter">
+                        <input type="email" id="emailNews" placeholder="Your email" required>
+                    </div>
+                    <div id="button">
+                        <button id ="btnSub" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                <div id="img-newsletter">
+                    <img src="/imagenes/PR_Monochromatic.png" alt="">
+                </div>
+                
+            </div>
+        </div>  
+        
+    
 
+        <div id="scroll-progress"></div>
+        
+        <button id="return-to-top"><i id="icono-return-top" class="fa-solid fa-arrow-up fa-bounce"></i></button>
+    </main>
+    
 </body>
 </html>
